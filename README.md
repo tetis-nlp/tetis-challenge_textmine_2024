@@ -1,6 +1,7 @@
 # [TETIS](https://www.umr-tetis.fr) @ [Challenge TextMine 2024](https://textmine.sciencesconf.org/resource/page/id/9)
 
 ---
+Le Challenge 2024 de TextMine `Reconnaissance d'entités géographiques dans un corpus des instructions nautiques`, disponible sous [Kaggle](https://www.kaggle.com/competitions/defi-textmine-2024/overview) vise à détecter les mentions de lieux décrit dans les volumes de descriptions des litoraux constitué par l’Institut national de l'information géographique et forestière (IGN) et le Service hydrographique et océanographique de la Marine (Shom).
 
 <img align="left" src="https://www.umr-tetis.fr/images/logo-header-tetis.png">
 
@@ -15,3 +16,13 @@
 | Sarah Valentin       |
 
 ---
+## Description du dépôt logiciel
+Ce dépôt propose 3 notebooks :
+
+1. [Fine-tuning de modèle de type BERT](notebook/BERT-like%20models%20fine-tuning.ipynb) : ce notebook permet d'entraîner des modèles de langues de type BERT (comme RoBERTa, XLM-RoBERTa, Camembert, ...) sur le jeux de données du challenge
+2. [Evaluer les entraînements](notebook/mlflow_results_formating.ipynb) : le précédent notebook permet d'enregistrer toutes les métriques des entraînements via l'outil [MLflow](https://mlflow.org/). Ce notebook, quant à lui, permet de mettre en forme ces résultats comme illustré par la Fig. 1 ci-dessous.
+3. [Inferring](notebook/Inferring%20with%20BERT-like%20fine-tuned%20models-no-pipeline.ipynb) : il permet de prédire les labels des tokens pour cette tâche
+
+
+![Comparaison de modèles pré-entraînés avec différents hyperparamètres](readme.img/hyperparameters_textmine.png)
+<p align="center"><em>Figure 1: Comparaison de modèles pré-entraînés avec différents hyperparamètres.</em></p>
