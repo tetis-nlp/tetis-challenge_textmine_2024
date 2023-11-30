@@ -17,11 +17,11 @@ Le Challenge 2024 de TextMine `Reconnaissance d'entités géographiques dans un 
 
 ---
 ## Description du dépôt logiciel
-Ce dépôt propose 3 notebooks :
-
-1. [Fine-tuning de modèle de type BERT](notebook/BERT-like%20models%20fine-tuning.ipynb) : ce notebook permet d'entraîner des modèles de langues de type BERT (comme RoBERTa, XLM-RoBERTa, Camembert, ...) sur le jeux de données du challenge
-2. [Evaluer les entraînements](notebook/mlflow_results_formating.ipynb) : le précédent notebook permet d'enregistrer toutes les métriques des entraînements via l'outil [MLflow](https://mlflow.org/). Ce notebook, quant à lui, permet de mettre en forme ces résultats comme illustré par la Fig. 1 ci-dessous.
-3. [Inferring](notebook/Inferring%20with%20BERT-like%20fine-tuned%20models-no-pipeline.ipynb) : il permet de prédire les labels des tokens pour cette tâche
+Ce dépôt propose 4 notebooks :
+1. [Pipeline spaCy](notebook/Pipeline%20Spacy.ipynb) : ce notebook permet de ré-entrainé un modèle issu de la librairie spaCy (fr_core_news_lg)
+2. [Fine-tuning de modèle de type BERT](notebook/BERT-like%20models%20fine-tuning.ipynb) : ce notebook permet d'entraîner des modèles de langues de type BERT (comme RoBERTa, XLM-RoBERTa, Camembert, ...) sur le jeux de données du challenge
+3. [Evaluer les entraînements](notebook/mlflow_results_formating.ipynb) : le précédent notebook permet d'enregistrer toutes les métriques des entraînements via l'outil [MLflow](https://mlflow.org/). Ce notebook, quant à lui, permet de mettre en forme ces résultats comme illustré par la Fig. 1 ci-dessous.
+4. [Inferring](notebook/Inferring%20with%20BERT-like%20fine-tuned%20models-no-pipeline.ipynb) : il permet de prédire les labels des tokens pour cette tâche
 
 
 ![Comparaison de modèles pré-entraînés avec différents hyperparamètres](readme.img/hyperparameters_textmine.png)
