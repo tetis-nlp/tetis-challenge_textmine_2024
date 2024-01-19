@@ -3,6 +3,8 @@
 ---
 Le Challenge 2024 de TextMine `Reconnaissance d'entités géographiques dans un corpus des instructions nautiques`, disponible sous [Kaggle](https://www.kaggle.com/competitions/defi-textmine-2024/overview) vise à détecter les mentions de lieux décrit dans les volumes de descriptions des littoraux constitué par l’Institut national de l'information géographique et forestière (IGN) et le Service hydrographique et océanographique de la Marine (Shom).
 
+Les poids du modèle le plus performant est disponible sous HuggingFace: [tetis-textmine-2024-camembert-large-based](https://huggingface.co/rdecoupes/tetis-textmine-2024-camembert-large-based)
+
 <img align="left" src="https://www.umr-tetis.fr/images/logo-header-tetis.png">
 
 | Participants               |
